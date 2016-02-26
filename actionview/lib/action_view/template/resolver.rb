@@ -143,7 +143,7 @@ module ActionView
     # This is what child classes implement. No defaults are needed
     # because Resolver guarantees that the arguments are present and
     # normalized.
-    def find_templates(name, prefix, partial, details)
+    def find_templates(name, prefix, partial, details, outside_app_allowed = false)
       raise NotImplementedError, "Subclasses must implement a find_templates(name, prefix, partial, details) method"
     end
 
